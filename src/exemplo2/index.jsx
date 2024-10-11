@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function App() {
   
-  const [??,??] = useState([]);
+  const [lista, setLista]= useState([]);
 
   useEffect(() => { 
 
@@ -12,7 +12,7 @@ export default function App() {
         setUsuario(dados);
     }
     buscarUsuario();
-  }, //complete o código);
+  } //complete o código);
 
   return (
     <>
