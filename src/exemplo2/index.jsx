@@ -7,12 +7,12 @@ export default function App() {
   useEffect(() => { 
 
     const buscarUsuario  = async () => {
-                    = await fetch('https://jsonplaceholder.typicode.com/photos');
-        const dados =                ;
+      const resposta = await fetch('https://jsonplaceholder.typicode.com/photos');
+        const dados = await resposta.json();
         setFotos(dados);
     }
     buscarUsuario();
-  } //complete o código);
+   }, []);
 
   return (
     <>
